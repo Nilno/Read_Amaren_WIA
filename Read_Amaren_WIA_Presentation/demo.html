@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Arctext Demo</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery.arctext.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+
+
+</head>
+<body>
+    <div class="container">
+
+        <section class="secCon"><!--Secondary container-->
+            <div class="demo">
+                <h3 id="headDemo">I am a heading</h3>
+            </div>
+
+        <div class="arc">
+                <h4>Set/Animate Arc</h4>
+                <p>Default display code for this demo.</p>
+                <code>$headDemo.arctext({radius: 300, dir: 1})</code>
+                <p class="btns">
+                    <a id="set_Arc" href="#"><span>Set me</span><span>radius: 80,<br /> dir: 1</span></a>
+                    <a id="animate_Arc" href="#"><span>Animate me down</span><span>radius: 400,<br /> dir: -1,<br /> animation: 400ms ease-in</span></a>
+                    <a id="animate_Arc2" href="#"><span>Animate me up</span><span>radius: 140,<br /> dir: 1,<br /> animation: 200ms</span></a>
+                    <a id="reset_Arc" href="#"><span>Reset me</span><span>radius: 300,<br /> dir: 1</span></a>
+                </p>
+            </div>
+            <div class="clear"></div>
+        </section>
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.arctext.js"></script>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+
+        var $headDemo	= $('#headDemo').hide();
+
+        google.load('webfont','1');
+
+        google.setOnLoadCallback(function() {
+            WebFont.load({
+                google		: {
+                    families	: ['Play']
+                },
+                fontactive	: function(fontFamily, fontDescription) {
+                    initiate();
+                },
+                fontinactive	: function(fontFamily, fontDescription) {
+                    initiate();
+                }
+            });
+        });
+
+        function initiate() {
+
+            //What the heading looks like first displayed on page
+            $headDemo.show().arctext({radius: 300, dir: 1});
+
+            //Set arc with radius and direction
+            $('#set_Arc').on('click', function() {
+                $headDemo.arctext('set', {
+                    radius		: 80, //Lower the radius = more of a curve upward or downward
+                    dir			: 1   //Dir(direction) 1 means curve up, Dir(direction) -1 means curve down
+                });
+                return false;
+            });
+
+            //Animate arc with easing
+            $('#animate_Arc').on('click', function() {
+                $headDemo.arctext('set', {
+                    radius		: 400,  //Higher the radius = less of a curve upward or downward
+                    dir			: -1,   //Direction down
+                    animation	: {
+                        speed	: 400,  //Higher the speed, the slower animation will go
+                        easing  : 'ease-in'
+                    }
+                });
+                return false;
+            });
+
+            //Animate arc with duration speed
+            $('#animate_Arc2').on('click', function() {
+                $headDemo.arctext('set', {
+                    radius		: 140,
+                    dir			: 1,
+                    animation	: {
+                        speed	: 200
+                    }
+                });
+                return false;
+            });
+
+            //Arc reset
+            $('#reset_Arc').on('click', function() {
+                $headDemo.arctext('set', {
+                    radius		: 300,
+                    dir			: 1
+                });
+                return false;
+            });
+        };
+    </script>
+</body>
+</html>

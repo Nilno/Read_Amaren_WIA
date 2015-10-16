@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Arc Text</title>
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/default.css" id="theme">
+    <link rel="stylesheet" href="lib/css/styles/sunburst.css">
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+    <div class="slides">
+
+        <section>
+
+            <h1>Arctext</h1>
+            <p><font size="7">Amaren Read</font></p>
+            <p><font size="5">WIA-SEC 01</font></p>
+
+        </section>
+
+        <section>
+            <h3>What is Arctext?</h3>
+            <p><font size="6">Arctext.js is a jQuery plugin that is based off of Lettering.js, which is also a jQuery plugin.
+                While the use of CSS3 lets us arrange and rotate letters on a curved path going up or down, it is quite complicated
+                to do so with CSS3 alone. With Arctext, designers/developers can use it to place letters on a arc type of path with
+                a equal direction, rotation and radius of the path. It sounds complicated but it is quite simple using the Arctext
+                plugin to place each letter on the arc type of path with the letters shown with an equal amount of space.</font></p>
+
+        </section>
+
+        <section>
+            <h3>How is Arctext used?</h3>
+            <p><font size="6">Arctext is used by using width, rotation, and radius of text. Direction is also used in whether or not the text
+                should be displayed going up or down in a arc type manner. The path of the text is based on a imaginary circle in which the path
+                follows. In order for the letters to be displayed, the rotation and space of the letters are based on the inputs of direction,
+                width, rotation and radius of which the CSS3 coding and jQuery coding defines. Arctext will calculate the code, and then place the letters
+                equally along the path.</font></p>
+        </section>
+
+        <section>
+            <h3>Why I choose Arctext</h3>
+            <p><font size="6">I chose Arctext because I think it looks more professional in webpages and give the webpages a nice clean look. Also, it gives
+                a sense of life to the layout of the page and is more stylish from the norm. By norm, I mean the simple left, right or center alignment of the text
+                displayed on the web. Using Arctext is useful by giving words, logos, or phrases characteristics and uniqueness that would appeal more to the viewer, instead of the
+                same alignments of text that we see throughout a lot of webpages.</font></p>
+        </section>
+
+        <section>
+            <section>
+                <h2>References:</h2>
+
+                    <p><a href="http://tympanus.net/codrops/2012/01/24/arctext-js-curving-text-with-css3-and-jquery/" target="_blank"> Codrops</a>
+                    <a href="http://codevisually.com/arctext-js-curving-text-with-css3-and-jquery/" target="_blank"> &nbsp&nbsp Code Visually</a></p>
+                    <p><a href="http://churchm.ag/arc-text/" target="_blank"> Churchmag</a>
+                    <a href="http://jquerymore.com/text-effect/Arctext-js-Curving-text-with-CSS3-and-jQuery" target="_blank">&nbsp&nbsp jQuerymore</a></p>
+                    <p><a href="http://www.sitepoint.com/5-jquery-text-rotate-arc-plugins/" target="_blank"> Sitepoint</a>
+                    <a href="http://www.ajaxshake.com/en/JS/2410631/curved-text-with-css3-and-jquery-arctext-js.html" target="_blank">&nbsp&nbsp Ajaxshake</a></p>
+                    <p><a href="https://github.com/codrops/Arctext" target="_blank">Arctext.js Documentation</a></p>
+
+            </section>
+
+        <section>
+
+                <h2>Code View</h2>
+						<pre><code>
+&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+
+&lt;title&gt;Arc Text&lt;/title&gt;
+&lt;meta name=&quot;description&quot; content=&quot;A framework for easily creating beautiful presentations using HTML&quot;&gt;
+&lt;meta name=&quot;author&quot; content=&quot;Hakim El Hattab&quot;&gt;
+
+&lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot; /&gt;
+&lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;black-translucent&quot; /&gt;
+
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot;&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;css/reveal.min.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;css/theme/default.css&quot; id=&quot;theme&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;lib/css/styles/sunburst.css&quot;&gt;
+
+&lt;!--[if lt IE 9]&gt;
+&lt;script src=&quot;lib/js/html5shiv.js&quot;&gt;&lt;/script&gt;
+&lt;![endif]--&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;div class=&quot;reveal&quot;&gt;
+&lt;div class=&quot;slides&quot;&gt;
+
+&lt;section&gt;
+
+&lt;h1&gt;Arctext&lt;/h1&gt;
+&lt;p&gt;&lt;font size=&quot;7&quot;&gt;Amaren Read&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font size=&quot;5&quot;&gt;WIA-SEC 01&lt;/font&gt;&lt;/p&gt;
+
+&lt;/section&gt;
+
+&lt;section&gt;
+&lt;h3&gt;What is Arctext?&lt;/h3&gt;
+&lt;p&gt;&lt;font size=&quot;6&quot;&gt;Arctext.js is a jQuery plugin that is based off of Lettering.js, which is also a jQuery plugin.
+While the use of CSS3 lets us arrange and rotate letters on a curved path going up or down, it is quite complicated
+to do so with CSS3 alone. With Arctext, designers/developers can use it to place letters on a arc type of path with
+a equal direction, rotation and radius of the path. It sounds complicated but it is quite simple using the Arctext
+plugin to place each letter on the arc type of path with the letters shown with an equal amount of space.&lt;/font&gt;&lt;/p&gt;
+
+&lt;/section&gt;
+
+&lt;section&gt;
+&lt;h3&gt;How is Arctext used?&lt;/h3&gt;
+&lt;p&gt;&lt;font size=&quot;6&quot;&gt;Arctext is used by using width, rotation, and radius of text. Direction is also used in whether or not the text
+should be displayed going up or down in a arc type manner. The path of the text is based on a imaginary circle in which the path
+follows. In order for the letters to be displayed, the rotation and space of the letters are based on the inputs of direction,
+width, rotation and radius of which the CSS3 coding and jQuery coding defines. Arctext will calculate the code, and then place the letters
+equally along the path.&lt;/font&gt;&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section&gt;
+&lt;h3&gt;Why I choose Arctext&lt;/h3&gt;
+&lt;p&gt;&lt;font size=&quot;6&quot;&gt;I chose Arctext because I think it looks more professional in webpages and give the webpages a nice clean look. Also, it gives
+a sense of life to the layout of the page and is more stylish from the norm. By norm, I mean the simple left, right or center alignment of the text
+displayed on the web. Using Arctext is useful by giving words, logos, or phrases characteristics and uniqueness that would appeal more to the viewer, instead of the
+same alignments of text that we see throughout a lot of webpages.&lt;/font&gt;&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section&gt;
+&lt;section&gt;
+&lt;h2&gt;References:&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://tympanus.net/codrops/2012/01/24/arctext-js-curving-text-with-css3-and-jquery/&quot; target=&quot;_blank&quot;&gt; Codrops&lt;/a&gt;
+&lt;a href=&quot;http://codevisually.com/arctext-js-curving-text-with-css3-and-jquery/&quot; target=&quot;_blank&quot;&gt; &amp;nbsp&amp;nbsp Code Visually&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://churchm.ag/arc-text/&quot; target=&quot;_blank&quot;&gt; Churchmag&lt;/a&gt;
+&lt;a href=&quot;http://jquerymore.com/text-effect/Arctext-js-Curving-text-with-CSS3-and-jQuery&quot; target=&quot;_blank&quot;&gt;&amp;nbsp&amp;nbsp jQuerymore&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.sitepoint.com/5-jquery-text-rotate-arc-plugins/&quot; target=&quot;_blank&quot;&gt; Sitepoint&lt;/a&gt;
+&lt;a href=&quot;http://www.ajaxshake.com/en/JS/2410631/curved-text-with-css3-and-jquery-arctext-js.html&quot; target=&quot;_blank&quot;&gt;&amp;nbsp&amp;nbsp Ajaxshake&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/codrops/Arctext&quot; target=&quot;_blank&quot;&gt;Arctext.js Documentation&lt;/a&gt;&lt;/p&gt;
+
+&lt;/section&gt;
+
+&lt;section&gt;
+
+&lt;h2&gt;Code View&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;
+
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;/section&gt;
+
+&lt;section&gt;
+
+&lt;h2&gt;My Demo Code&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head lang=&quot;en&quot;&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;title&gt;Arctext Demo&lt;/title&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/style.css&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.arctext.js&quot;&gt;&lt;/script&gt;
+&lt;link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'&gt;
+
+
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;container&quot;&gt;
+
+&lt;section class=&quot;secCon&quot;&gt;&lt;!--Secondary container--&gt;
+&lt;div class=&quot;demo&quot;&gt;
+&lt;h3 id=&quot;headDemo&quot;&gt;I am a heading&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;arc&quot;&gt;
+&lt;h4&gt;Set/Animate Arc&lt;/h4&gt;
+&lt;p&gt;Default display code for this demo.&lt;/p&gt;
+&lt;code&gt;$headDemo.arctext({radius: 300, dir: 1})&lt;/code&gt;
+&lt;p class=&quot;btns&quot;&gt;
+&lt;a id=&quot;set_Arc&quot; href=&quot;#&quot;&gt;&lt;span&gt;Set me&lt;/span&gt;&lt;span&gt;radius: 80,&lt;br /&gt; dir: 1&lt;/span&gt;&lt;/a&gt;
+&lt;a id=&quot;animate_Arc&quot; href=&quot;#&quot;&gt;&lt;span&gt;Animate me down&lt;/span&gt;&lt;span&gt;radius: 400,&lt;br /&gt; dir: -1,&lt;br /&gt; animation: 400ms ease-in&lt;/span&gt;&lt;/a&gt;
+&lt;a id=&quot;animate_Arc2&quot; href=&quot;#&quot;&gt;&lt;span&gt;Animate me up&lt;/span&gt;&lt;span&gt;radius: 140,&lt;br /&gt; dir: 1,&lt;br /&gt; animation: 200ms&lt;/span&gt;&lt;/a&gt;
+&lt;a id=&quot;reset_Arc&quot; href=&quot;#&quot;&gt;&lt;span&gt;Reset me&lt;/span&gt;&lt;span&gt;radius: 300,&lt;br /&gt; dir: 1&lt;/span&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+&lt;/section&gt;
+&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.arctext.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.google.com/jsapi&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+
+var $headDemo	= $('#headDemo').hide();
+
+google.load('webfont','1');
+
+google.setOnLoadCallback(function() {
+WebFont.load({
+google		: {
+families	: ['Play']
+},
+fontactive	: function(fontFamily, fontDescription) {
+initiate();
+},
+fontinactive	: function(fontFamily, fontDescription) {
+initiate();
+}
+});
+});
+
+function initiate() {
+
+//What the heading looks like first displayed on page
+$headDemo.show().arctext({radius: 300, dir: 1});
+
+//Set arc with radius and direction
+$('#set_Arc').on('click', function() {
+$headDemo.arctext('set', {
+radius	: 80, //Lower the radius = more of a curve upward or downward
+dir	: 1   //Dir(direction) 1 means curve up, Dir(direction) -1 means curve down
+});
+return false;
+});
+
+//Animate arc with easing
+$('#animate_Arc').on('click', function() {
+$headDemo.arctext('set', {
+radius	: 400,  //Higher the radius = less of a curve upward or downward
+dir		: -1,   //Direction down
+animation	: {
+speed	: 400,  //Higher the speed, the slower animation will go
+easing  : 'ease-in'
+}
+});
+return false;
+});
+
+//Animate arc with duration speed
+$('#animate_Arc2').on('click', function() {
+$headDemo.arctext('set', {
+radius	: 140,
+dir		: 1,
+animation	: {
+speed	: 200
+}
+});
+return false;
+});
+
+//Arc reset
+$('#reset_Arc').on('click', function() {
+$headDemo.arctext('set', {
+radius		: 300,
+dir			: 1
+});
+return false;
+});
+};
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;/section&gt;
+&lt;/section&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;script src=&quot;lib/js/head.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/reveal.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+
+// Configuration for the way presentation is displayed
+Reveal.initialize({
+controls: true,
+progress: true,
+history: true,
+center: true,
+
+theme: Reveal.getQueryHash().theme || 'moon', //Used &quot;moon&quot; theme
+transition: Reveal.getQueryHash().transition || 'concave' //concave transition
+});
+
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+                        </code>
+                        </pre>
+
+            </section>
+
+            <section>
+
+                <h2>My Demo Code</h2>
+                    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head lang=&quot;en&quot;&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;title&gt;Arctext Demo&lt;/title&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/style.css&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.arctext.js&quot;&gt;&lt;/script&gt;
+&lt;link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'&gt;
+
+
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;container&quot;&gt;
+
+&lt;section class=&quot;secCon&quot;&gt;&lt;!--Secondary container--&gt;
+&lt;div class=&quot;demo&quot;&gt;
+&lt;h3 id=&quot;headDemo&quot;&gt;I am a heading&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;arc&quot;&gt;
+&lt;h4&gt;Set/Animate Arc&lt;/h4&gt;
+&lt;p&gt;Default display code for this demo.&lt;/p&gt;
+&lt;code&gt;$headDemo.arctext({radius: 300, dir: 1})&lt;/code&gt;
+&lt;p class=&quot;btns&quot;&gt;
+&lt;a id=&quot;set_Arc&quot; href=&quot;#&quot;&gt;&lt;span&gt;Set me&lt;/span&gt;&lt;span&gt;radius: 80,&lt;br /&gt; dir: 1&lt;/span&gt;&lt;/a&gt;
+&lt;a id=&quot;animate_Arc&quot; href=&quot;#&quot;&gt;&lt;span&gt;Animate me down&lt;/span&gt;&lt;span&gt;radius: 400,&lt;br /&gt; dir: -1,&lt;br /&gt; animation: 400ms ease-in&lt;/span&gt;&lt;/a&gt;
+&lt;a id=&quot;animate_Arc2&quot; href=&quot;#&quot;&gt;&lt;span&gt;Animate me up&lt;/span&gt;&lt;span&gt;radius: 140,&lt;br /&gt; dir: 1,&lt;br /&gt; animation: 200ms&lt;/span&gt;&lt;/a&gt;
+&lt;a id=&quot;reset_Arc&quot; href=&quot;#&quot;&gt;&lt;span&gt;Reset me&lt;/span&gt;&lt;span&gt;radius: 300,&lt;br /&gt; dir: 1&lt;/span&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+&lt;/section&gt;
+&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.arctext.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.google.com/jsapi&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+
+var $headDemo	= $('#headDemo').hide();
+
+google.load('webfont','1');
+
+google.setOnLoadCallback(function() {
+WebFont.load({
+google		: {
+families	: ['Play']
+},
+fontactive	: function(fontFamily, fontDescription) {
+initiate();
+},
+fontinactive	: function(fontFamily, fontDescription) {
+initiate();
+}
+});
+});
+
+function initiate() {
+
+//What the heading looks like first displayed on page
+$headDemo.show().arctext({radius: 300, dir: 1});
+
+//Set arc with radius and direction
+$('#set_Arc').on('click', function() {
+$headDemo.arctext('set', {
+radius	: 80, //Lower the radius = more of a curve upward or downward
+dir	: 1   //Dir(direction) 1 means curve up, Dir(direction) -1 means curve down
+});
+return false;
+});
+
+//Animate arc with easing
+$('#animate_Arc').on('click', function() {
+$headDemo.arctext('set', {
+radius	: 400,  //Higher the radius = less of a curve upward or downward
+dir	: -1,   //Direction down
+animation: {
+speed	: 400,  //Higher the speed, the slower animation will go
+easing  : 'ease-in'
+}
+});
+return false;
+});
+
+//Animate arc with duration speed
+$('#animate_Arc2').on('click', function() {
+$headDemo.arctext('set', {
+radius	: 140,
+dir		: 1,
+animation	: {
+speed	: 200
+}
+});
+return false;
+});
+
+//Arc reset
+$('#reset_Arc').on('click', function() {
+$headDemo.arctext('set', {
+radius		: 300,
+dir		: 1
+});
+return false;
+});
+};
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                    </code>
+                        </pre>
+
+            </section>
+        </section>
+
+    </div>
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+
+<script>
+
+    // Configuration for the way presentation is displayed
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme || 'moon', //Used "moon" theme
+        transition: Reveal.getQueryHash().transition || 'concave' //concave transition
+    });
+
+</script>
+
+</body>
+</html>

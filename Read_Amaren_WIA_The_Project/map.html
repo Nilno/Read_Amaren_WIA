@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our map (Gaming Earth)</title>
+    <link rel="stylesheet" type="text/css"  href="css/styles.css" />
+    <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+    <script src="includes/jquery-1.6.2.min.js"></script>
+</head>
+
+<header>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="stats.html">Stats</a></li>
+        <li><a href="map.html">Conventions</a></li>
+    </ul>
+
+    <h1>GE</h1>
+</header>
+
+<body>
+    <h2>Here are the latest conventions.</h2>
+<div class="map_container">
+    <a class="dot" style="top:68px; left:255px;" state="MN" city="minneapolis"></a>
+    <a class="dot" style="bottom:68px;  left:246px;" state="TX" city="houston"></a>
+    <a class="dot" style="bottom:52px;  right:343px;"  state="FL" city="daytona"></a>
+    <a class="dot" style="top:126px; left:306px;" state="IL" city="bloomington"></a>
+
+    <form id="mapForm" name="mapForm" class="form_state" method="post" action="">
+        <select name="state" id="state">
+            <option value="TX">Texas</option>
+            <option value="IL">Illinois</option>
+            <option value="MN">Minnesota</option>
+            <option value="FL">Florida</option>
+            <option value="ALL" selected="selected">Show all States</option>
+        </select>
+    </form>
+    <div class="detail_container">
+        <div class="city_detail">
+            <h3>Choose a city</h3>
+            <p>Details will show here.</p>
+        </div>
+    </div>
+</div>
+
+<div class="city_detail_container">
+
+    <!-- City -->
+    <div class="city_detail" id="minneapolis">
+        <img class="city_photo" src="img/cities/MN.jpg" alt="minnesota" width="75" height="75" />
+        <div class="city_info">
+            <h2>Minneapolis, MN</h2>
+            <h3>Minnesota LC</h3>
+            <p>Minnesota Long Con will be happening on October 23-25, 2015 at the Northrup King Building. It will be a place for RPG
+                fans and players to come play at this small convention. It will only be for a weekend on one table.</p>
+        </div>
+    </div>
+
+    <!-- City -->
+    <div class="city_detail" id="bloomington">
+        <img class="city_photo" src="img/cities/IL.jpg" alt="bloomington" width="75" height="75" />
+        <div class="city_info">
+            <h2>Bloomington, IL</h2>
+            <h3>FlatCon 2015</h3>
+            <p>FlatCon 2015 is back and it has much in store from October 23-25, 2015. There will be a tournament featuring  the leagues of:
+                D&D Adventurer's League, Warhammer, and Pathfinder Society. Also, there is registrations and event submissions but all proceeds
+                from the convention will be in order to help fight against cancer. All of this will be happening at the Interstate Center Mini
+                Expo Building.</p>
+        </div>
+        <div class="clear_both"></div>
+    </div>
+
+    <!-- City -->
+    <div class="city_detail" id="daytona">
+        <img class="city_photo" src="img/cities/FL.jpg" alt="daytona" width="75" height="75" />
+        <div class="city_info">
+            <h2>Daytona, FL</h2>
+            <h3>Enigma Con 2015</h3>
+            <p>Enigma Con 2015 will be held at The Plaza resort and spa from October 23-25, 2015. It will be a
+               Sci-fi/Media Arts tpye of gaming convention. For all of you who are into Sci-fi and the media arts,
+               go join them for some fun!</p>
+        </div>
+        <div class="clear_both"></div>
+    </div>
+
+    <!-- City -->
+    <div class="city_detail" id="houston">
+        <img class="city_photo" src="img/cities/TX.jpg" alt="houston" width="75" height="75" />
+        <div class="city_info">
+            <h2>Houston, TX</h2>
+            <h3>Houston AE</h3>
+            <p>Alright arcade fans! This convention is where it is going to be for all the classic retro gaming style adventures!
+               This is the Houston Arcade Expo, happening from November 13-14, 2015 and it will be held at the NW Crowne Plaza 290.
+               Classic coin-op pinball machines, console games(free to play or to buy), as well as, penny arcade, and arcade games.
+               There will also be workshops and tournaments being held for those who are interested. Sounds like there will be excitement!</p>
+        </div>
+        <div class="clear_both"></div>
+    </div>
+
+</div>
+
+<footer>
+    <h5>&copy; Amaren Read WIA 2015</h5>
+</footer>
+
+<script src="js/map.js"></script>
+</body>
+</html>

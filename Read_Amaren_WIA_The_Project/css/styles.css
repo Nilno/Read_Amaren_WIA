@@ -1,0 +1,316 @@
+body {
+    font-family: "Play", Helvetica, Arial, sans-serif;
+    background:#F5F5DC;
+    text-align:center;
+}
+
+h1 {
+    color: #033FA7;
+    margin: 1% auto;
+}
+
+h2 {
+    margin-top: 1%;
+    font-family: "Play", Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #033FA7;
+}
+
+h5 {
+    font-family: "Play", Helvetica, Arial, sans-serif;
+    color:#B2FF99;
+}
+
+p {
+    font-family: "Play", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    width: 78%;
+    margin: 1% auto;
+}
+
+header {
+    background: #000;
+}
+
+header h1 {
+    position: absolute;
+    top:0;
+    left:0;
+    font-family: "Play", Helvetica, Arial, sans-serif;
+    color: #000;
+    text-align: center;
+    margin: 1% 0% 1% 5%;
+    background: #B2FF99;
+    padding: 0.7% 0.7% 1% 0.7%;
+    border: 1px solid #FFF;
+    border-radius: 45px;
+    -moz-border-radius: 45px;
+    -webkit-border-radius: 45px;
+    box-shadow: 0 0 20px #FFF;
+    -moz-box-shadow: 0 0 20px #FFF;
+    -webkit-box-shadow: 0 0 20px #FFF;
+}
+
+ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+ul li {
+    display: inline;
+    font-family: "Play", Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    padding-right: 10px;
+}
+
+#piechart {
+    width: 900px;
+    height: 500px;
+    margin: 2% auto;
+    border: 1px solid #000;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    box-shadow: 0 0 35px #000;
+    -moz-box-shadow: 0 0 35px #000;
+    -webkit-box-shadow: 0 0 35px #000;
+}
+
+.ref {
+    font-family: "Play", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    width: 15%;
+}
+
+.ref p {
+    font-family: "Play", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    width: 10%;
+}
+
+.ref a {
+    text-decoration: none;
+    color: #033FA7;
+}
+
+#wrapper {
+    margin: 1% auto;
+    text-align: center;
+    width: 55%;
+    background: #BAB7B7;
+    padding: 15px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0 0 35px #000;
+    -webkit-box-shadow: 0 0 35px #000;
+    -moz-box-shadow: 0 0 35px #000;
+}
+
+
+audio {
+   margin: 0 auto;
+}
+
+button {
+    font-family: "Play", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    background: #033FA7;
+    color: #FFF;
+    padding: 0.2%;
+    margin-bottom: 1%;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+#vid {
+    margin: 4%;
+    border: 1px groove #000;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0 0 35px #000;
+    -moz-box-shadow: 0 0 35px #000;
+    -webkit-box-shadow: 0 0 35px #000;
+}
+
+button:hover {
+    color: #000;
+    background: #B2FF99;
+    font-weight: bold;
+    box-shadow: 0 0 5px #808080;
+    -moz-box-shadow: 0 0 5px #808080;
+    -webkit-box-shadow: 0 0 5px #808080;
+}
+
+#wrapper img {
+    border: 1px solid #FFF;
+}
+
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background: url(../img/overlay.png) repeat;
+}
+
+#lightbox p{
+    margin: 1% 0% 0% 1%;
+    text-align: left;
+    font-size: 18px;
+    font-family: "Play", Helvetica, Arial, sans-serif;
+    color: #FFF;
+}
+
+#lightbox img{
+    border: 1px solid #FFF;
+    box-shadow: 0 0 25px #FFF;
+    -webkit-box-shadow: 0 0 25px #FFF;
+    -moz-box-shadow: 0 0 25px #FFF;
+    max-width: 940px;
+}
+
+header a {
+    color: #B2FF99;
+    text-decoration: none;
+}
+
+header a:active{
+    background:#033FA7;
+}
+
+header a:hover {
+    transition: linear 0.8s;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    box-shadow: 0 0 35px #FFF;
+    -webkit-box-shadow: 0 0 35px #FFF;
+    -moz-box-shadow: 0 0 35px #FFF;
+}
+
+.map_container {
+    background: url(../img/template/US50StatesBlue.jpg) no-repeat 0px 0px;
+    height: 325px;
+    width: 760px;
+    position: relative;
+    color: #033FA7;
+    font-family: "Play", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    margin: 3% 0% 15% 18%;
+    padding: 0.5%;
+    box-shadow: 0 0 35px #000;
+    -webkit-box-shadow: 0 0 35px #000;
+    -moz-box-shadow: 0 0 35px #000;
+}
+
+.map_container a.dot {
+    background: url(../img/template/dots.png) no-repeat 0px 0px;
+    height: 20px;
+    width: 20px;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+}
+
+.map_container a.dot:hover {
+    background-position: 0px -20px;
+}
+
+.map_container a.dot.selected {
+    background-position: 0px -40px;
+}
+
+.map_container .form_state {
+    position: absolute;
+    top: 265px;
+    left: 30px;
+}
+
+.clear_both {
+    clear: both;
+}
+
+.map_container .detail_container {
+    position: absolute;
+    top: 35px;
+    left: 480px;
+    width: 340px;
+    height: 260px;
+}
+
+.map_container .city_detail {
+    position: absolute;
+    top: 0px;
+    width: 240px;
+    margin-left:4%;
+    padding: 10px 0px 0px 12px;
+    border-right: 1px solid #a9b5c8;
+    border-top: 1px solid #a9b5c8;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+.map_container .city_detail .city_photo {
+    float: left;
+    margin-right: 15px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0px 5px 3px #000;
+    -webkit-box-shadow: 0px 5px 3px #000;
+    -moz-box-shadow: 0px 5px 3px #000;
+    -webkit-border-radius: 8px;
+}
+.map_container .city_detail .city_info {
+    width: 137px;
+    float: left;
+}
+
+.map_container .city_info h2 {
+    margin: 0px 0px 0px 0px;
+    font-family: "Play", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+.map_container .city_info h3 {
+    margin-bottom: 12px;
+    font-family: "Play", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #033FA7;
+}
+.map_container p {
+    text-align: center;
+    margin: 10px 0px 12px 0px;
+    font-family: "Play", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.city_info p {
+    margin: 43px 0px 12px -103px;
+    font-family: "Play", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    width: 242px;
+}
+
+.city_detail_container {display: none;}
+
+footer {
+    margin-top: 4%;
+    background: #000;
+    clear: both;
+}
+
